@@ -18,11 +18,21 @@ from django.urls import path, re_path
 from menu.views import MenuView
 from vacancy.views import VacanciesView
 from resume.views import ResumesView
+from django.views.generic import RedirectView
+from auth.views import MyLoginView, MySignupView
+from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', MenuView.as_view()),
     path('vacancies', VacanciesView.as_view()),
     path("resumes", ResumesView.as_view()),
+    path('login', MyLoginView.as_view()),
+    path('logout', LogoutView.as_view()),
+    path('signup', MySignupView.as_view()),
+    # path('login/', RedirectView.as_view(url='/login')),
+    # path('signup/', RedirectView.as_view(url='/signup')),
+    # path('logout/', RedirectView.as_view(url='/logout')),
+    # path('menu/', RedirectView.as_view(url='/'))
     # re_path("(?P<link>[^/]*)/?", CandyView.as_view())
 ]

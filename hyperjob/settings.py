@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGOUT_REDIRECT_URL = '/login'
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'hyperjob.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,"auth/templates/auth")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

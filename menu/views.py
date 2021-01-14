@@ -11,7 +11,8 @@ links = {
     'sign up': "/signup",
     'vacancies': "/vacancies",
     'resumes': "/resumes",
-    'personal profile': "/home"
+    'personal profile': "/home",
+    'logout': "/logout"
 }
 
 class MenuView(View):
