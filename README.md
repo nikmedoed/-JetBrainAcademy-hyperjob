@@ -3,10 +3,12 @@
  
 Topics:
 - OPP
-- python collections
+- Python collections
 - Django 
     - ORM models
-    
+    - Forms, Authorization
+    - DTF
+    - Requests
     
 Link to project description: https://hyperskill.org/projects/94
 

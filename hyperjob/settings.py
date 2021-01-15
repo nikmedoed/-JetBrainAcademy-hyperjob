@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'resume',
     'vacancy',
-    'menu'
+    'menu',
+    'home'
 ]
 
 MIDDLEWARE = [
